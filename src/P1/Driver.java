@@ -14,16 +14,19 @@ public class Driver {
             //Get a connection to the database
             Connection myConn = DriverManager.getConnection(DB_URL,DB_USER,DB_PASS);
 
-            //Create a statement
-            Statement myStat = myConn.createStatement();
+            String query = "SELECT ? from medewerkers";
+            PreparedStatement pstmt = myConn.prepareStatement(query);
+            pstmt.setString(1, "*");
+            pstmt.executeQuery();
 
-            //Execute a SQL query
-            ResultSet myRs = myStat.executeQuery("SELECT * FROM medewerkers");
 
-            //Process the result set
-            while (myRs.next()) {
-                System.out.println(myRs.getString("voorl") + ", " + myRs.getString("naam"));
-            }
+
+
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+
         }
         catch (Exception exc) {
             exc.printStackTrace();
