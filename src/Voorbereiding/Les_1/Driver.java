@@ -1,4 +1,4 @@
-package P1;
+package Voorbereiding.Les_1;
 
 import java.sql.*;
 

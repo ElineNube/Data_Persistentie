@@ -1,10 +1,13 @@
-package P1;
+package Inleveropdrachten.Les_1;
+
+import Inleveropdrachten.Les_1.Reiziger;
+import Inleveropdrachten.Les_1.ReizigerDao;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.sql.Date;
 
-public class ReizigerOracleDaolmpl implements ReizigerDao{
+public class ReizigerOracleDaolmpl implements ReizigerDao {
 
     private ArrayList<Reiziger> deReizigers = new ArrayList<>();
 
