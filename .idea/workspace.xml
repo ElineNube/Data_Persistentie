@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da6a773f-908f-4265-abc4-9cb7d892f5b2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/P1/Driver.java" afterPath="$PROJECT_DIR$/src/Voorbereiding/Les_1/Driver.java" />
-      <change beforePath="$PROJECT_DIR$/src/P1/Main.java" afterPath="$PROJECT_DIR$/src/Inleveropdrachten/Les_1/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/P1/Reiziger.java" afterPath="$PROJECT_DIR$/src/Inleveropdrachten/Les_1/Reiziger.java" />
-      <change beforePath="$PROJECT_DIR$/src/P1/ReizigerDao.java" afterPath="$PROJECT_DIR$/src/Inleveropdrachten/Les_1/ReizigerDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/P1/ReizigerOracleDaolmpl.java" afterPath="$PROJECT_DIR$/src/Inleveropdrachten/Les_1/ReizigerOracleDaolmpl.java" />
-    </list>
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="da6a773f-908f-4265-abc4-9cb7d892f5b2" name="Default" comment="" />
+    <ignored path=".idea/" />
+    <ignored path="out/" />
+    <manually-removed-from-ignored>
+      <directory path="$PROJECT_DIR$/out/" />
+    </manually-removed-from-ignored>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,8 +167,8 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ojdbc6.jar!/" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -347,12 +343,12 @@
       <updated>1524585066068</updated>
       <workItem from="1524585069266" duration="240000" />
       <workItem from="1524588889559" duration="9205000" />
-      <workItem from="1524686092028" duration="631000" />
+      <workItem from="1524686092028" duration="895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10076000" />
+    <option name="totallyTimeSpent" value="10340000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="0" width="974" height="1047" extended-state="0" />
