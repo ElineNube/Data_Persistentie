@@ -1,7 +1,6 @@
 package Inleveropdrachten.Les_1;
 
-import Inleveropdrachten.Les_1.Reiziger;
-import Inleveropdrachten.Les_1.ReizigerDao;
+import lesopdracht.Reiziger;
 
 import java.util.ArrayList;
 import java.util.List;

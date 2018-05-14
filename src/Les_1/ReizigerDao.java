@@ -1,6 +1,6 @@
 package Inleveropdrachten.Les_1;
 
-import Inleveropdrachten.Les_1.Reiziger;
+import lesopdracht.Reiziger;
 
 import java.sql.Date;
 import java.util.List;
