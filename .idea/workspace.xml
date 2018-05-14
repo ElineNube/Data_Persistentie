@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baa15b7f-2e0d-47fc-a997-a09d7066914c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Les_2/lesopdracht/Main.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Les_2/lesopdracht/OracleBaseDAO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Les_2/lesopdracht/Reiziger.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Les_2/lesopdracht/ReizigerDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Les_2/lesopdracht/ReizigerOracleDaolmpl.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Data_Persistentie/P1/Driver.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Data_Persistentie/P1/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Data_Persistentie/P1/Reiziger.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Data_Persistentie/P1/ReizigerDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Data_Persistentie/P1/ReizigerOracleDaolmpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Inleveropdrachten/Les_1/Main.java" afterPath="$PROJECT_DIR$/src/Les_1/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/Inleveropdrachten/Les_1/Reiziger.java" afterPath="$PROJECT_DIR$/src/Les_1/Reiziger.java" />
-      <change beforePath="$PROJECT_DIR$/src/Inleveropdrachten/Les_1/ReizigerDao.java" afterPath="$PROJECT_DIR$/src/Les_1/ReizigerDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/Inleveropdrachten/Les_1/ReizigerOracleDaolmpl.java" afterPath="$PROJECT_DIR$/src/Les_1/ReizigerOracleDaolmpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/Voorbereiding/Les_1/Driver.java" afterPath="$PROJECT_DIR$/src/Les_1/Voorbereiding/Driver.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -163,6 +147,24 @@
             <path>
               <item name="Data_Persistentie" type="b2602c69:ProjectViewProjectNode" />
               <item name="Data_Persistentie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Data_Persistentie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Data_Persistentie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Data_Persistentie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Data_Persistentie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Les_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Data_Persistentie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Data_Persistentie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Les_2" type="462c0819:PsiDirectoryNode" />
+              <item name="lesopdracht" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,12 +328,20 @@
       <workItem from="1525782437162" duration="3739000" />
       <workItem from="1526030892178" duration="593000" />
       <workItem from="1526281273205" duration="4865000" />
-      <workItem from="1526288341263" duration="17000" />
+      <workItem from="1526288341263" duration="52000" />
     </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1526288383978</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526288383978</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9234000" />
+    <option name="totallyTimeSpent" value="9269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -370,6 +380,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
