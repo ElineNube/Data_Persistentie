@@ -1,4 +1,4 @@
-package Les_2.lesopdracht;
+package Les_2.inleveropdracht;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
