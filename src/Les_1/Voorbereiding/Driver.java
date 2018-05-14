@@ -1,4 +1,4 @@
-package Voorbereiding.Les_1;
+package Les_1.Voorbereiding;
 
 import java.sql.*;
 

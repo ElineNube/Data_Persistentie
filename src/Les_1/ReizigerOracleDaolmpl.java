@@ -1,6 +1,4 @@
-package Inleveropdrachten.Les_1;
-
-import lesopdracht.Reiziger;
+package Les_1;
 
 import java.util.ArrayList;
 import java.util.List;

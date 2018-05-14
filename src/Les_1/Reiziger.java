@@ -1,4 +1,4 @@
-package Inleveropdrachten.Les_1;
+package Les_1;
 
 import java.sql.Date;
 import java.util.ArrayList;

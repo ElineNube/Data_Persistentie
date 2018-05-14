@@ -1,4 +1,4 @@
-package lesopdracht;
+package Les_2.lesopdracht;
 
 import java.sql.*;
 import java.util.ArrayList;
