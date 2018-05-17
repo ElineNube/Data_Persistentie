@@ -67,7 +67,7 @@ public class Reiziger {
     }
 
     public String toString() {
-        return "'" + this.voorletters + (tussenvoegsel == null ? "" : tussenvoegsel) + this.achternaam + "', met de gbdatum:" + (geboortedatum == null ? "" : geboortedatum);
+        return this.voorletters + " " + (tussenvoegsel == null ? "" : tussenvoegsel) +  " " +this.achternaam + ", met de gbdatum:" + (geboortedatum == null ? "(Niet bekend)" : geboortedatum);
     }
 
 

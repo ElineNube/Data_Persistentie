@@ -8,6 +8,14 @@ public class OVChipkaart {
     private int klasse;
     private double saldo;
     private int reizigerID;
+    
+    public OVChipkaart(int kaartnummer, Date geldigTot,  int klasse, double saldo, int reizigerID) {
+    	this.kaartnummer = kaartnummer;
+    	this.geldigTot = geldigTot;
+    	this.klasse = klasse;
+    	this.saldo = saldo;
+    	this.reizigerID = reizigerID;
+    }
 
     public int getKaartnummer() {
         return kaartnummer;
@@ -47,5 +55,11 @@ public class OVChipkaart {
 
     public void setReizigerID(int reizigerID) {
         this.reizigerID = reizigerID;
+    }
+    
+    public String toString() {
+    	String result = "* OV Chipkaart met kaartnummer " + kaartnummer + " is geldig tot " + geldigTot + " rijdt met klasse " + klasse + " heeft een saldo van " + saldo + " en is van"
+    			+ " de reiziger met id: " + reizigerID + "\n";
+    	return result;
     }
 }
