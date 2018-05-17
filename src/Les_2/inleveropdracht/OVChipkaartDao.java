@@ -10,5 +10,7 @@ public interface OVChipkaartDao {
     
     public OVChipkaart save(OVChipkaart ovkaart);
     
+    public List<OVChipkaart> findAll();
+    
 
 }

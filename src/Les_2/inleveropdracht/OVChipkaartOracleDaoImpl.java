@@ -104,12 +104,9 @@ public class OVChipkaartOracleDaoImpl extends OracleBaseDAO implements OVChipkaa
     }
     
     public boolean delete(OVChipkaart ovkaart) {
-    	if (ovkaart == null) {
-    		throw new IllegalArgumentException("OV-Kaart mag niet null zijn");
-    	} else {
     		try {
        		 Connection conn = getConnection();
-       	        String sql = "DELETE FROM OV_CHIPKAART WHERE KAARTNUMMER = " + ovkaart.getKaartnummer();
+        		String sql = "DELETE FROM OV_CHIPKAART WHERE KAARTNUMMER = " + ovkaart.getKaartnummer();
        	        Statement statement = conn.createStatement();
        	        statement.executeUpdate(sql);
        	        boolean result = true;
@@ -119,5 +116,31 @@ public class OVChipkaartOracleDaoImpl extends OracleBaseDAO implements OVChipkaa
        		return false;
        	}     
        }
+    
+    public List<OVChipkaart> findAll() {
+        try{
+            Connection conn = getConnection();
+            String sql = "SELECT * FROM OV_CHIPKAART";
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            List<OVChipkaart> list = new ArrayList<>();
+            OVChipkaart ovkaart;
+            while (rs.next()) {
+                ovkaart = new OVChipkaart(
+						rs.getInt("KAARTNUMMER"),
+						rs.getDate("GELDIGTOT"),
+						rs.getInt("KLASSE"),
+						rs.getDouble("SALDO"),
+						rs.getInt("REIZIGERID")
+	        );
+                list.add(ovkaart);
+            }
+            rs.close();
+            statement.close();
+            return list;
+        } catch (SQLException e){
+            System.out.println(e.getMessage());
+            return null;
+        }
     }
 }

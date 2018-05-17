@@ -1,8 +1,6 @@
 package Les_2.inleveropdracht;
 
-import java.sql.Date;
 import java.text.ParseException;
-import java.sql.Date;
 
 public class Main {
     public static void main(String[] args) throws ParseException {
@@ -18,9 +16,9 @@ public class Main {
           
           // Reiziger opslaan:
           
-//        System.out.println("- Opgeslagen reiziger:" + reizigerOracleDao.save(reiziger1).toString());
-//        System.out.println("- Opgeslagen reiziger:" + reizigerOracleDao.save(reiziger2).toString());
-//        System.out.println("- Opgeslagen reiziger:" + reizigerOracleDao.save(reiziger3).toString());
+          System.out.println("- Opgeslagen reiziger:" + reizigerOracleDao.save(reiziger1).toString());
+          System.out.println("- Opgeslagen reiziger:" + reizigerOracleDao.save(reiziger2).toString());
+          System.out.println("- Opgeslagen reiziger:" + reizigerOracleDao.save(reiziger3).toString());
 
           
           //Alle reizigers vinden
@@ -35,25 +33,12 @@ public class Main {
           System.out.println("- Reiziger is geupdate: " + reizigerOracleDao.update(reiziger3).toString());
           
           //Delete reiziger
+          System.out.println("- Reiziger is verwijderd: " + reizigerOracleDao.delete(reiziger1));
           System.out.println("- Reiziger is verwijderd: " + reizigerOracleDao.delete(reiziger2));
+          System.out.println("- Reiziger is verwijderd: " + reizigerOracleDao.delete(reiziger3));
           
-          //OVChipkaart
+          //Alle reizigers vinden
+          System.out.println(reizigerOracleDao.findAll());
           
-          OVChipkaartOracleDaoImpl ovchipkaartOracleDao = new OVChipkaartOracleDaoImpl();
-          
-          System.out.println("- Zoek op OVkaart nummer: 35283\n " + ovchipkaartOracleDao.findByKey(35283));
-          System.out.println("- Zoek op ReizigerID: 5 ->\n " + ovchipkaartOracleDao.findByReiziger(5));
-          
-          @SuppressWarnings("deprecation")
-          OVChipkaart ov1 = new OVChipkaart(11111, new Date(1020, 1, 23), 2, 10.5, 5);
-//          System.out.println("- Opgeslagen OVKaart:" + ovchipkaartOracleDao.save(ov1).toString());
-          
-        //Gegevens OVkaart wijzigen en opslaan
-          ov1.setSaldo(30);
-          ov1.setKlasse(1);
-          System.out.println("- OV is geupdate: " + ovchipkaartOracleDao.update(ov1).toString());
-          
-        //Delete reiziger
-          System.out.println("- OVKaart is verwijderd: " + ovchipkaartOracleDao.delete(ov1));
     }
 }
