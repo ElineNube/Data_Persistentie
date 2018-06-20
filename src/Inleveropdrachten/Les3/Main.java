@@ -1,44 +1,40 @@
 package Inleveropdrachten.Les3;
 
-import java.text.ParseException;
-
 public class Main {
-    public static void main(String[] args) throws ParseException {
-    	
-    	// Reizigers aanmaken: 
-    	
-         Reiziger reiziger1 = new Reiziger(7, "DP", "van den", "Bunt");
-         Reiziger reiziger2 = new Reiziger(8, "C", "van", "Opdorp");
-    	 Reiziger reiziger3 = new Reiziger(9, "F", "de", "Boer");
-    	  
-       
-          ReizigerOracleDaolmpl reizigerOracleDao = new ReizigerOracleDaolmpl();
-          
-          // Reiziger opslaan:
-          
-          System.out.println("- Opgeslagen reiziger:" + reizigerOracleDao.save(reiziger1).toString());
-          System.out.println("- Opgeslagen reiziger:" + reizigerOracleDao.save(reiziger2).toString());
-          System.out.println("- Opgeslagen reiziger:" + reizigerOracleDao.save(reiziger3).toString());
+	
+	public static void main(String[] args) {
+		
+		ProductDao pDAO = new ProductOracleDaoImpl();
+        OVChipkaart_ProductDao ov_pDAO = new OVChipkaart_ProductDaoImpl();
 
-          
-          //Alle reizigers vinden
-          System.out.println(reizigerOracleDao.findAll());
-          
-          //Reizigers vinden op geboortedatum
-          System.out.println(reizigerOracleDao.findByGBdatum("17-09-02"));
-          
-          //Gegevens reiziger wijzigen en opslaan
-          reiziger3.setVoorletters("ED");
-          reiziger3.setAchternaam("Nube");
-          System.out.println("- Reiziger is geupdate: " + reizigerOracleDao.update(reiziger3).toString());
-          
-          //Delete reiziger
-          System.out.println("- Reiziger is verwijderd: " + reizigerOracleDao.delete(reiziger1));
-          System.out.println("- Reiziger is verwijderd: " + reizigerOracleDao.delete(reiziger2));
-          System.out.println("- Reiziger is verwijderd: " + reizigerOracleDao.delete(reiziger3));
-          
-          //Alle reizigers vinden
-          System.out.println(reizigerOracleDao.findAll());
-          
+        // Selecteer een product uit de producttabel met id 1
+        System.out.println("Product met id 1");
+        System.out.println("Productnaam: " + pDAO.findById(1).getProductNaam());
+        System.out.println("Productbeschrijving: " + pDAO.findById(1).getbeschrijving());
+        System.out.println("Productprijs: " + pDAO.findById(1).getPrijs());
+
+        // Selecteer een relatie uit de koppeltabel met relatie id 1
+        System.out.println("\nRelatie uit de koppeltabel met id 1");
+        System.out.println("Kaartnummer: " + ov_pDAO.findById(1).getOVChipkaart().getKaartnummer());
+        System.out.println("Productnummer: " + ov_pDAO.findById(1).getProduct().getProductNummer());
+        System.out.println("Reisproduct status: " + ov_pDAO.findById(1).getReisproductStatus());
+        System.out.println("Laatste update: " + ov_pDAO.findById(1).getLastUpdate());
+
+        // Selecteer de relatie van kaartnummer 35283
+        System.out.println("\nSelecteer de relatie van kaartnummer 35283");
+        System.out.println("KoppelID: " + ov_pDAO.findByIdInOVChipkaart(35283).getOvproductID());
+        System.out.println("Reisproduct status: " + ov_pDAO.findByIdInOVChipkaart(35283).getReisproductStatus());
+        System.out.println("Kaartnummer: " + ov_pDAO.findByIdInOVChipkaart(35283).getOVChipkaart().getKaartnummer());
+        System.out.println("saldo: " + ov_pDAO.findByIdInOVChipkaart(35283).getOVChipkaart().getSaldo());
+
+        // Vind alle informatie over kaartnummer 1111111111
+        System.out.println("\nVind alle informatie over kaartnummer 1111111111");
+        for (OVChipkaart_Product ov_p : ov_pDAO.findByIdInBothTables(35283)) {
+            System.out.println("ov_productID: " + ov_p.getOvproductID());
+            System.out.println("Reisproduct status: " + ov_p.getReisproductStatus());
+            System.out.println("Kaartnummer: " + ov_p.getOVChipkaart().getKaartnummer());
+            System.out.println("saldo: " + ov_p.getOVChipkaart().getSaldo());
+            System.out.println("productNaam: " + ov_p.getProduct().getProductNaam() + "\n");
+        }
     }
 }

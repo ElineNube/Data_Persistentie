@@ -17,7 +17,11 @@ public class OVChipkaart {
     	this.reizigerID = reizigerID;
     }
 
-    public int getKaartnummer() {
+    public OVChipkaart() {
+		
+	}
+
+	public int getKaartnummer() {
         return kaartnummer;
     }
 

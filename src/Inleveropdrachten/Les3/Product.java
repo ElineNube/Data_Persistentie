@@ -13,6 +13,9 @@ public class Product {
 		this.prijs = prijs;
 	}
 	
+	public Product() {
+	}
+
 	public int getProductNummer() {
 		return this.productNummer;
 	}

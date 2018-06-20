@@ -91,7 +91,7 @@ class ProductOracleDaoImpl extends OracleBaseDAO implements ProductDao{
 	        }
 	    }
 
-		public Product findBykey(int productNummer) {
+		public Product findById(int productNummer) {
 			try {
 				Connection conn = getConnection();
 				Statement stmt = conn.createStatement();

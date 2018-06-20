@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface ProductDao {
 	
-	public Product findBykey(int productNummer);
+	public Product findById(int productNummer);
 	
 	public Product save(Product product);
 	
